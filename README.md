@@ -60,7 +60,11 @@ Thinking... 🤔: The app shows a loader while the AI processes your context.
 
 ## 🏗️ Technical Architecture (RAG)
 The application follows the Retrieval-Augmented Generation pattern:
+
 **Extraction:** PdfPig extracts raw text from local files.
+
 **Contextualization:** The extracted text is injected into the AI's System Prompt.
+
 **Inference:** The Phi-3 model processes the user query specifically using the provided context.
+
 **Streaming:** The OllamaApiClient utilizes IAsyncEnumerable to stream the response back to the console.
