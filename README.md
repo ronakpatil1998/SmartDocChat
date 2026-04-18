@@ -73,12 +73,16 @@ The application follows the Retrieval-Augmented Generation pattern:
 Run this to wake up the Phi-3 brain and start the local server:
 
 **PowerShell**
+
 **ollama run phi3**
+
 Note: This command checks if the server is running, starts it if it isn't, and immediately opens the chat interface.
 
 ## To Force Stop Everything
 If you need to clear your RAM/GPU and shut down all Ollama processes instantly:
 
 **PowerShell**
-**Stop-Process -Name "ollama*" -Force
-**
+
+Stop-Process -Name "ollama*" -Force
+
+
