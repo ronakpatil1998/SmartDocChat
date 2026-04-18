@@ -78,11 +78,15 @@ Run this to wake up the Phi-3 brain and start the local server:
 
 Note: This command checks if the server is running, starts it if it isn't, and immediately opens the chat interface.
 
+Go to http://localhost:11434
+
 ## To Force Stop Everything
 If you need to clear your RAM/GPU and shut down all Ollama processes instantly:
 
 **PowerShell**
 
 Stop-Process -Name "ollama*" -Force
+
+To make sure it’s truly off (especially if you're trying to free up VRAM/RAM for your demo), you can check your browser. Go to http://localhost:11434. If it says "Site cannot be reached," Ollama is successfully stopped!
 
 
