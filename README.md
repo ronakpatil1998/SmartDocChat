@@ -1,7 +1,7 @@
-🤖 SmartDocChat: Private Local AI Document Assistant
+## 🤖 SmartDocChat: Private Local AI Document Assistant
 SmartDocChat is a Privacy-First RAG (Retrieval-Augmented Generation) application built with .NET 8/9 and Ollama. It allows you to chat with multiple PDF documents locally on your machine. Your data never leaves your computer, making it ideal for sensitive enterprise documentation.
 
-🌟 Key Features
+## 🌟 Key Features
 100% Local: Powered by Ollama (Phi-3 model) for complete data privacy.
 
 Multi-PDF Support: Reads and indexes all PDF files within a specific directory.
@@ -12,7 +12,7 @@ UX Focused: Includes a "Thinking..." loader to improve user interaction.
 
 Native Implementation: Uses OllamaSharp for stable, high-performance communication with the AI.
 
-🛠️ Prerequisites
+## 🛠️ Prerequisites
 Before running the application, ensure you have the following installed:
 
 .NET 8.0 SDK or 9.0 SDK
@@ -23,7 +23,7 @@ Phi-3 Model: Open your terminal and run:
 
 Bash
 ollama pull phi3
-🚀 Installation & Setup
+## 🚀 Installation & Setup
 1. Clone the Project
 Create a folder on your drive (e.g., D:\Projects\SmartDocChat) and initialize your console app.
 
@@ -31,17 +31,17 @@ Create a folder on your drive (e.g., D:\Projects\SmartDocChat) and initialize yo
 Install the following dependencies via the Package Manager Console in Visual Studio:
 
 PowerShell
-# Core library to communicate with Ollama
+## Core library to communicate with Ollama
 dotnet add package OllamaSharp --version 5.0.3
 
-# Library to extract text from PDF files
+## Library to extract text from PDF files
 dotnet add package UglyToad.PdfPig --prerelease
 3. Prepare your Data Folder
 Create a folder named Data inside your project directory (or any path of your choice).
 
 Place the PDFs you want to chat with inside this folder.
 
-💻 Execution Guide
+## 💻 Execution Guide
 Start Ollama: Ensure the Ollama application is running in your system tray.
 
 Configure Path: Open Program.cs and update the folderPath variable to point to your PDF folder:
@@ -65,7 +65,7 @@ Thinking... 🤔: The app shows a loader while the AI processes your context.
 
 Exit: Type exit to close the application.
 
-🏗️ Technical Architecture (RAG)
+## 🏗️ Technical Architecture (RAG)
 The application follows the Retrieval-Augmented Generation pattern:
 
 Extraction: PdfPig extracts raw text from local files.
